@@ -4,6 +4,10 @@
 At the moment this just starts the spring application and runs any new liquibase migrations.
 
 
+## BOILERPLATE ADJUSTMENTS
+
+Please try to follow the README instructions below and let me know about any issues so that I can improve and update them as needed.
+
 ### Prerequisites:
 1. docker - [install here](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
 1. homebrew -  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
@@ -31,12 +35,11 @@ At the moment this just starts the spring application and runs any new liquibase
 
 ### Installing Application Dependencies and Running the Application
 
-Install dependencies via gradle, hopefully your IDE helps you
+Try the following:
+`./gradlew clean build`
 
 Start application via your IDE (or via the command line)
-
-**(Will make improvements to both of the above -- sorry)**
-
+`./gradlew bootRun` (via an IDE will work better)
 
 ## Liquibase Migrations
 
